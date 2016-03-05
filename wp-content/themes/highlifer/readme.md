@@ -3,4 +3,4 @@ Okay, that wasn't really a help statement. This is me giving out the source code
 Oh well. I hope you find some of the code(which is not entirely mine) out. 
 em..joy!
 
-I tire o
+I tire o!
