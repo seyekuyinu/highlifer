@@ -23,7 +23,10 @@
     
     <?php if( $header_button_url && $header_button ) : ?>
 	    <div class="module right">
-	        <a class="btn btn-sm" href="<?php echo esc_url($header_button_url); ?>"><?php echo wp_kses($header_button, ebor_allowed_tags()); ?></a>
+	        <!-- <a class="btn btn-sm " href="<?php echo esc_url($header_button_url); ?>"><?php echo wp_kses($header_button, ebor_allowed_tags()); ?></a> -->
+
+	        <a class="btn btn-sm btn-modal" href="#" modal-link="621"><?php echo wp_kses($header_button, ebor_allowed_tags()); ?></a> 
+
 	    </div>
     <?php endif; ?>
     

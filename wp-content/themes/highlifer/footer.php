@@ -1,3 +1,4 @@
+				
 <?php 
 	/**
 	 * First, we need to check if we're going to override the header layout (with post meta)
@@ -25,6 +26,9 @@
 		jQuery(function(){ // document ready
 
 		  if (!!jQuery('.scrollless').offset()) { // make sure ".sticky" element exists
+			
+			var windowWhatSize = jQuery(window).width();  
+			var approvedSize = 600;
 
 		    var stickyTop = jQuery('.scrollless').offset().top; // returns number 
 
@@ -32,7 +36,7 @@
 
 		      var windowTop = jQuery(window).scrollTop(); // returns number 
 
-		      if (stickyTop < windowTop){
+		      if ((stickyTop < windowTop) && (windowWhatSize > approvedSize) ) {
 		        jQuery('.scrollless').css({ position: 'fixed', top: '80px', right: '60px' });
 
 		      }
@@ -47,9 +51,11 @@
 		});
 		
 		
-		
+		/** teacher, who knows how to fade elements when they scroll? **/
 		jQuery(window).scroll(function(){
     jQuery(".mb8").css("opacity", 1 - jQuery(window).scrollTop() / 250);
+    jQuery(".datefader").css("opacity", 1 - jQuery(window).scrollTop() / 250);
+
   });
 	</script>
 

@@ -1,4 +1,6 @@
 <?php 	
+
+
 	get_header();
 
 	echo ebor_get_page_title( 

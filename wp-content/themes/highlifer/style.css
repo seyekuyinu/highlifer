@@ -836,15 +836,16 @@ div.wpcf7 p {
 
 .d0{
     text-transform: uppercase;
-    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Lato, Raleway, "Helvetica Neue", Helvetica, sans-serif;
     }
 
 
-h4 a.vc_gitem-link {
+h4 a.vc_gitem-link, .excerptia p {
     text-align: left;
     font-family: Raleway;
     font-weight: 800;
     font-style: normal;
+    color: #000;
 }
 
 a.vc_gitem-link:hover{
@@ -852,6 +853,18 @@ a.vc_gitem-link:hover{
 }
 
 .date-over{
- color:#000;
+ color:#fff;
+text-shadow: 4px 1px 6px rgba(150, 150, 150, 1);
 }
 
+.excerptia a{
+	
+    font-size: 16px;
+    text-align: left;
+    color: #6F6F6F;
+    padding-top: 2px;
+    font-weight: 400;
+    font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+}
+.excerptia a:hover, h4 a.vc_gitem-link:hover{color:#005776}
